@@ -1,5 +1,4 @@
 import sqlite3
-import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     CommandHandler,
@@ -204,7 +203,7 @@ async def fallback(update: Update, context: CallbackContext):
 def main():
     init_db()
 
-    bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    bot_token = "7552599313:AAFu4HsQGMKkurLSneBfHSvYjCCVWJ9Uh_U"
 
     application = Application.builder().token(bot_token).build()
 
